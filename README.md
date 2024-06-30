@@ -22,7 +22,7 @@ Sigue estos pasos para instalar el proyecto en tu entorno local:
 
 ```sh
 git clone https://github.com/MarceloSoto123/MarceloSoto123.git
-cd proyecto marcelo soto
+cd MarceloSoto123
 ```
 2. **Instalación de Dependencias:**
 
