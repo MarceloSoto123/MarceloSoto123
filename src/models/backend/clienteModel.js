@@ -1,8 +1,15 @@
 const DataBase = require('../conexionModel');
 
 class Cliente {
+<<<<<<< HEAD
     constructor(id,nombres, direccion, correo, telefono, estado) {
         this.id = id;
+=======
+    constructor(id, id_user_created, id_user_updated, nombres, direccion, correo, telefono, estado) {
+        this.id = id;
+        this.id_user_created = id_user_created;
+        this.id_user_updated = id_user_updated;
+>>>>>>> 2d61022a7239461275c42cd90825ee13e9ac761c
         this.nombres = nombres;
         this.direccion = direccion;
         this.correo = correo;
@@ -14,7 +21,11 @@ class Cliente {
         const db = DataBase.getInstance(); // Obtiene una instancia de la conexión a la base de datos
         try {
             // Ejemplo de consulta SQL para insertar un nuevo cliente
+<<<<<<< HEAD
             const query = 'INSERT INTO clientes (nombres, direccion, correo, telefono, estado) VALUES (?, ?, ?, ?, ?)';
+=======
+            const query = 'INSERT INTO clientes (id_user_created, id_user_updated, nombres, direccion, correo, telefono, estado) VALUES (?, ?, ?, ?, ?, ?, ?)';
+>>>>>>> 2d61022a7239461275c42cd90825ee13e9ac761c
             const params = [this.nombres, this.direccion, this.correo, this.telefono, this.estado];
             const resultado = await db.ejecutarQuery(query, params);
             console.log('Cliente agregado correctamente:', resultado);
@@ -89,6 +100,7 @@ class Cliente {
             throw error;
         }
     }
+<<<<<<< HEAD
     async eliminarCliente() {
         const db = DataBase.getInstance(); // Obtiene una instancia de la conexión a la base de datos
         try {
@@ -106,6 +118,8 @@ class Cliente {
             throw error;
         }
     }
+=======
+>>>>>>> 2d61022a7239461275c42cd90825ee13e9ac761c
 }
 
 module.exports = Cliente
