@@ -55,10 +55,7 @@ async function listarClientes(req, res) {
                             '<td> </td>'+
                             '<td> </td>'+
                             `<td><a class="btn btn-primary" href='/sitio-admin/modulo-editar-cliente/${ cliente.id }'> Editar </a> </td>`+
-<<<<<<< HEAD
                             `<td><a class="btn btn-primary" href='/sitio-admin/modulo-eliminar-cliente/${ cliente.id }'> Eliminar </a> </td>`+
-=======
->>>>>>> 2d61022a7239461275c42cd90825ee13e9ac761c
                         `</tr>`;
             });
             html += '</table>';
@@ -123,7 +120,6 @@ async function guardarEdicion(req, res)
     }
     
 }
-<<<<<<< HEAD
 async function guardarCliente (req, res)
 {
     let user = req.session.user;
@@ -154,7 +150,3 @@ async function eliminarCliente(req, res) {
     }
 }
 module.exports = { ingresarCliente, guardarCliente, eliminarCliente,  listarClientes, editarCliente, guardarEdicion};
-=======
-
-module.exports = { ingresarCliente,  listarClientes, editarCliente, guardarEdicion};
->>>>>>> 2d61022a7239461275c42cd90825ee13e9ac761c
